@@ -1,0 +1,169 @@
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+h3 {
+    color: #333;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#main {
+    background-color: white;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+}
+
+label {
+    display: inline-block;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    color: #707070;
+    text-align: right;
+    width: 80px;
+/*    border: 1px solid #ccc; */
+    vertical-align: middle;
+}
+
+textarea {
+    width: 85%;
+    height: 34px;
+    font-size: 13px;
+    vertical-align: middle;
+    margin: 10px 0px 3px 5px;
+    resize: none;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857142857143;
+}
+
+div {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+select {
+    width: 170px;
+}
+
+textarea,input,select {
+    border-radius: 3.01px;    
+}
+
+input,select,textarea {
+    border: 1px solid #A9A9A9;
+}
+
+#choose_invinfo label {
+    font-size: 14px;
+}
+
+#undis {
+    border: 0px;
+    height: 0px;
+}
+
+#clear_all {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+#print_title {    
+    text-align: center;
+}
+
+#print_describle {
+    height: 200px;
+}
+
+#interactive,#especially {
+    width: 50%;
+}
+
+#text_invinfo {
+    background-color: red;
+}
+
+#b_replay {
+    height: 104px;
+}
+
+#bug_result_describle {
+    height: 190px;
+    color: #333;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857142857143;
+}
+
+#createbug {
+    background-color: #0092ff;
+    box-shadow: none;
+    border: 0;
+    border-radius: 3.01px;
+    color: white;
+}
+
+footer {
+    height:auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+a {
+    margin:0 10px;
+    text-decoration: none;
+}
+a:link {color:blue;}        /* 未被访问的链接 */
+a:visited {color:#808040;}  /* 已被访问的链接 */
+a:hover {color:green;}  /* 鼠标指针移动到链接上 */
+a:active {color:#0000FF;}   /* 正在被点击的链接 */
+
+
+
+
+
+/*test*/
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    float:left;
+    padding:5px;
+    margin-top: 10px;          
+}
+#section {
+    width:70%;
+    float:left;
+    border-left: 1px solid #A9A9A9;
+    margin-left: 5px;
+    margin-top: 10px;
+    text-align: left;       
+}
+#b_title,#b_replay,#b_expectation {
+    float: left;
+}
+
+form input {
+    width: 50%;
+}
+
+font {
+    font-size: 12px;
+    color: #FF0033;
+}
+
+#bug_result_title {
+    font-size: 19px;
+    line-height: 1.25;
+    color: #333;
+    font-family: Arial,sans-serif;
+}

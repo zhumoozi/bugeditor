@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="static/lib/require.js"></script>
+    <script type="text/javascript" src="static/lib/jquery.js"></script>
+    <script src="static/lib/Cookies.js"></script>
+    <script src="static/lib/localStorage.js"></script>
+    <!--<script type="text/javascript" src="static/js/bug.js"></script>-->
+    <!--<script type="text/javascript" src="static/js/addcontent.js"></script>-->
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="shortcut icon" href="bug.ico">
+    <title>bug模板</title>
+</head>
+<body>
+    <header>
+        <h3 style=";">bug编辑规范</h3>
+        <button type="button" id="clear_all">一键重置</button>
+        <hr/>
+    </header>
+    <div id="main">
+        <div id="index_left">
+            <div id="text_title">
+                <label id="nav"><span>bug标题</span></label>
+                <textarea id="b_title" placeholder="例：【指标样式设置】明细表指标调整数量级之后，文字颜色无法设置"></textarea>
+            </div>
+            <div id="text_replay">
+                <label id="nav"><span>还原步骤</span></label>
+                <textarea id="b_replay" placeholder="请详细描述还原步骤..."></textarea>
+            </div>
+            <div id="text_expectation">
+                <label id="nav"><span>期望结果</span></label>
+                <textarea id="b_expectation" placeholder="请描述期望结果..."></textarea>
+            </div>
+            <div id="text_invinfo">
+                <div id="nav">
+                    <label><span>环境信息</span></label>
+                </div>
+
+                <div id="section">
+                    <form action="" method="get" id="choose_invinfo">
+                        <label>影响版本：</label> 
+                        <input list="systemsinput" id="choose_infversion">
+                        <datalist id="systemsinput">
+                            <option>10.0.2 release</option>
+                            <option>master</option>
+                            <option>10.0.2 feature</option>
+                        </datalist>
+                        <font>*</font>
+                        <br />
+                        <label>jar包版本：</label>
+                        <input type="date" id="choose_jartime">
+                        <font>*</font>
+                        <br />
+                        <label>部署方式：</label>
+                        <input id="choose_time" type="text" name="jar" placeholder="linux tomcat8 jdk1.8 " value=""/>
+                        <br/>
+                        <label>环境信息：</label>
+                        <input type="text" id="interactive" name="interact" placeholder="单机环境，迁移数据库mysql" value=""/>
+                        <br/>
+                        <label>日志信息：</label>
+                        <font>*上传问题截图、gif，如有报错，请提供后台日志、前台报错</font>
+                        <br/>                
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="index_right">
+            <div id="print_title">
+                <textarea id="bug_result_title" placeholder="Here will print the bug title!" readonly="readonly"></textarea>
+            </div>
+            <div id="print_describle">
+                <textarea id="bug_result_describle" placeholder="Here will print the bug describle!" readonly="readonly"></textarea>
+            </div>
+            <div id="control">
+                <button type="button" id="copy_theme">复制主题</button>
+                <button type="button" id="copy_describe">复制描述</button>
+                <button type="button" id="createbug">创建BUG</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Version:1.1; Copyright:2018</p>
+    </footer>
+    <script>
+        requirejs.config({
+            baseUrl: "static/js",
+            paths: {
+                jquery: "../lib/jquery"
+            }
+        });
+
+        require(["require", "jquery", "bugBeta"], function(require, $) {
+            var bugBeta = require("bugBeta");
+    //        bugBeta.addAll();
+        });
+    </script>
+</body>
+</html>

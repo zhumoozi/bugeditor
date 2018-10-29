@@ -1,0 +1,108 @@
+#index {
+	margin: 0 auto;
+}
+
+#index_left {
+	width: 49.5%;
+	border:2px solid blue;
+	float: left;
+}
+
+#index_right {
+	width: 49.5%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: blue;
+	float: right;
+}
+
+#links {
+	border: 1px solid blue;
+	float: left;
+}
+textarea {
+	margin: 0 auto;
+	width: 98%;
+	height: 40px;
+	text-align: auto;
+	font-size: 13px;
+}
+
+body {
+	background-color: #c0c0c0;	
+}
+
+p {
+	margin: 0 auto;
+}
+
+span {
+	font-weight: bold;
+}
+
+/*链接样式*/
+a {
+	margin:0 10px;
+	text-decoration: none;
+}
+a:link {color:blue;}		/* 未被访问的链接 */
+a:visited {color:#808040;}	/* 已被访问的链接 */
+a:hover {color:green;}	/* 鼠标指针移动到链接上 */
+a:active {color:#0000FF;}	/* 正在被点击的链接 */
+
+button {
+	border-radius: 3px;
+}
+
+
+footer {
+	position:absolute;
+	bottom:0;
+	width:99%;
+	height:auto;
+	text-align: center;
+	font-size: 12px;
+}
+
+.text_replay textarea {
+	height: 80px;
+}
+
+#text_invinfo textarea {
+	height: 100px;
+}
+
+#bug_example {
+	height: 250px;
+	width: 99%;
+	/*float: center;*/
+	background-color: #FAEBD7;
+}
+
+#bug_example button {
+	background-color: #CCCCFF;
+}
+
+#bug_result_title {
+	height: 50px;
+	width: 99%;
+	float: center;
+}
+#bug_result_describle {
+	height: 180px;
+	width: 99%;
+	float: center;
+}
+
+#interactive {
+	width: 80%;
+}
+#specially {
+	width: 50%;
+}
+
+#createbug {
+	color: #fff;
+    background-color: #0092ff;
+	position: static;
+}
